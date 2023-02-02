@@ -13,8 +13,8 @@ public class LoginStep extends RunCucumberTest {
     LoginPage loginPage = new LoginPage(driver);
     HomePage homePage = new HomePage(driver);
 
-    @Dado("^que eu estou na página de login$")
-    public void que_eu_estou_na_página_de_login(){
+    @Dado("^que eu estou na pagina de login$")
+    public void que_eu_estou_na_pagina_de_login(){
         loginPage.acessarAplicacao();
     }
 
@@ -28,7 +28,7 @@ public class LoginStep extends RunCucumberTest {
         loginPage.inserirSenha();
     }
 
-    @E("^clico no botão Entrar$")
+    @E("^clico no botao Entrar$")
     public void clico_no_botão_Entrar(){
         loginPage.clicarBotaoEntrar();
     }

@@ -9,28 +9,168 @@
     "line": 3,
     "elements": [
       {
-        "line": 9,
-        "name": "Realizar login com usuario default",
+        "line": 21,
+        "name": "Adicionar conta",
         "description": "",
-        "id": "realizar-login;realizar-login-com-usuario-default",
+        "id": "contas---adicionar;adicionar-conta;;2",
         "type": "scenario",
-        "keyword": "Cenario",
+        "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 1107608900,
+              "duration": 2602107300,
               "status": "passed"
             },
             "line": 10,
-            "name": "que eu estou na página de login",
+            "name": "que eu estou na pagina home",
             "match": {
-              "location": "LoginStep.que_eu_estou_na_página_de_login()"
+              "location": "HomeStep.que_eu_estou_na_pagina_home()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 108060900,
+              "duration": 67797700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clico no menu Contas",
+            "match": {
+              "location": "HomeStep.clico_no_menu_Contas()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 552804300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono o submenu Adicionar",
+            "match": {
+              "location": "HomeStep.seleciono_o_submenu_Adicionar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 177950400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "eu insiro o nome \u0027Conta Poupança\u0027 da conta",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Conta Poupança",
+                  "offset": 18
+                }
+              ],
+              "location": "ContasStep.eu_insiro_o_nome_da_conta(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 861193300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clico no botao Salvar",
+            "match": {
+              "location": "ContasStep.clico_no_botão_Salvar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 67415300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "o sistema abre a lista de contas",
+            "match": {
+              "location": "ContasStep.o_sistema_abre_a_lista_de_contas()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 42526400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "valido a mensagem de sucesso",
+            "match": {
+              "location": "ContasStep.valido_a_mensagem_de_sucesso()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 55014700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "eu encontro minha conta \u0027Conta Poupança\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Conta Poupança",
+                  "offset": 25
+                }
+              ],
+              "location": "ContasStep.eu_encontro_minha_conta(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "Contas - Adicionar",
+    "description": "Eu como usuária do site seu barriga\r\nQuero criar uma conta poupança\r\nPara guardar dinheiro",
+    "id": "contas---adicionar",
+    "keyword": "Funcionalidade",
+    "uri": "contas_adicionar.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Realizar login com usuario default",
+        "description": "",
+        "id": "login;realizar-login-com-usuario-default",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 448437700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que eu estou na pagina de login",
+            "match": {
+              "location": "LoginStep.que_eu_estou_na_pagina_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 121722100,
               "status": "passed"
             },
             "line": 11,
@@ -42,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 100607000,
+              "duration": 167777500,
               "status": "passed"
             },
             "line": 12,
@@ -54,11 +194,11 @@
           },
           {
             "result": {
-              "duration": 851276400,
+              "duration": 803053300,
               "status": "passed"
             },
             "line": 13,
-            "name": "clico no botão Entrar",
+            "name": "clico no botao Entrar",
             "match": {
               "location": "LoginStep.clico_no_botão_Entrar()"
             },
@@ -66,7 +206,7 @@
           },
           {
             "result": {
-              "duration": 81321800,
+              "duration": 70431700,
               "status": "passed"
             },
             "line": 14,
@@ -78,7 +218,7 @@
           },
           {
             "result": {
-              "duration": 99234300,
+              "duration": 137062800,
               "status": "passed"
             },
             "line": 15,
@@ -91,9 +231,9 @@
         ]
       }
     ],
-    "name": "Realizar login",
-    "description": "Eu como usuária do site seu barriga\r\nQuero fazer login\r\nPara ter acesso a pagina principal\r\n\r\n//tag",
-    "id": "realizar-login",
+    "name": "Login",
+    "description": "Eu como usuária do site seu barriga\r\nQuero fazer login\r\nPara ter acesso a pagina principal",
+    "id": "login",
     "keyword": "Funcionalidade",
     "uri": "login.feature"
   }

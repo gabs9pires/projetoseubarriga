@@ -12,11 +12,19 @@ public class HomePage extends Utils {
     }
 
     public void acessarAplicacao (){
-        esperarElementoPresente(By.xpath("//*[@id=\"navbar\"]/ul/li[1]/a"), 10);
+        esperarElementoPresente(By.xpath("//*[@id=\"navbar\"]/ul/li[1]/a"), 50);
     }
 
     public void validarMensagemBemVindo (){
         esperarElementoPresente(By.xpath("/html/body/div[1]"), 10);
         driver.findElement(By.xpath("/html/body/div[1]")).getText().contains("Bem vindo");
+    }
+
+    public void clicarMenuContas (){
+        driver.findElement(By.xpath("//*[@id=\"navbar\"]/ul/li[2]/a")).click();
+    }
+
+    public void clicarMenuContas_subAdicionar(){
+        driver.findElement(By.xpath("//*[@id=\"navbar\"]/ul/li[2]/ul/li[1]/a")).click();
     }
 }
