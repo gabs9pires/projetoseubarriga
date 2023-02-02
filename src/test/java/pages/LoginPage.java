@@ -14,12 +14,19 @@ public class LoginPage extends Utils {
 
     public void acessarAplicacao(){
         driver.get("https://seubarriga.wcaquino.me/login");
-        esperarElementoPresente(By.id(""), 10);
-        Assert.assertEquals(true, driver.findElement(By.id("")).isDisplayed());
+        esperarElementoPresente(By.xpath("//*[@id=\"bs-example-navbar-collapse-1\"]/ul/li[1]/a"), 10);
+        Assert.assertEquals(true, driver.findElement(By.xpath("//*[@id=\"bs-example-navbar-collapse-1\"]/ul/li[1]/a")).isDisplayed());
     }
 
-    public void preencheEmail() {
-        driver.findElement(By.id("email")).sendKeys("");
+    public void inserirEmail() {
+        driver.findElement(By.id("email")).sendKeys("wagner@aquino");
     }
 
+    public void inserirSenha(){
+        driver.findElement(By.id("senha")).sendKeys("123456");
+    }
+
+    public void clicarBotaoEntrar(){
+        driver.findElement(By.xpath("/html/body/div[2]/form/button")).click();
+    }
 }

@@ -1,0 +1,100 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Realizar login com usuario default",
+        "description": "",
+        "id": "realizar-login;realizar-login-com-usuario-default",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1107608900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que eu estou na página de login",
+            "match": {
+              "location": "LoginStep.que_eu_estou_na_página_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 108060900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "eu insiro email",
+            "match": {
+              "location": "LoginStep.eu_insiro_email()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 100607000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "insiro a senha",
+            "match": {
+              "location": "LoginStep.insiro_a_senha()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 851276400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico no botão Entrar",
+            "match": {
+              "location": "LoginStep.clico_no_botão_Entrar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 81321800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "o sistema realiza o login com sucesso",
+            "match": {
+              "location": "LoginStep.o_sistema_realiza_o_login_com_sucesso()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 99234300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "exibe mensagem de bem vindo",
+            "match": {
+              "location": "LoginStep.exibe_mensagem_de_bem_vindo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "Realizar login",
+    "description": "Eu como usuária do site seu barriga\r\nQuero fazer login\r\nPara ter acesso a pagina principal\r\n\r\n//tag",
+    "id": "realizar-login",
+    "keyword": "Funcionalidade",
+    "uri": "login.feature"
+  }
+]
