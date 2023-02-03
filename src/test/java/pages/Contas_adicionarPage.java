@@ -1,9 +1,11 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import support.Utils;
 
-public class Contas_adicionarPage {
+public class Contas_adicionarPage extends Utils {
     WebDriver driver;
     public Contas_adicionarPage (WebDriver driver) {
         this.driver = driver;

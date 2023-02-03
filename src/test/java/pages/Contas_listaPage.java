@@ -22,4 +22,8 @@ public class Contas_listaPage extends Utils {
         return minhaConta;
     }
 
+    public void removerConta(){
+        driver.findElement(By.xpath("//*[@id=\"tabelaContas\"]/tbody/tr/td[2]/a[2]/span")).click();
+        driver.findElement(By.xpath("/html/body/div[1]")).getText().equals("Conta removida com sucesso!");
+    }
 }
