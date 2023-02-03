@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runner.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.198 s <<< FAILURE! - in runner.RunCucumberTest
+runner.RunCucumberTest.initializationError  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Not a file or directory: C:\Users\gpires\IdeaProjects\ProjetoSeuBarriga\adicionar
+

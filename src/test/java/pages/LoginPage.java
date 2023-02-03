@@ -19,7 +19,7 @@ public class LoginPage extends Utils {
     }
 
     public void inserirEmail() {
-        driver.findElement(By.id("email")).sendKeys("wagner@aquino");
+        driver.findElement(By.id("email")).sendKeys("gabriela@pires");
     }
 
     public void inserirSenha(){
