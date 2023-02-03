@@ -12,13 +12,14 @@ public class HomeStep extends RunCucumberTest {
     LoginPage loginPage = new LoginPage(driver);
 
     @Dado("^que eu estou na pagina home$")
-    public void que_eu_estou_na_pagina_home(){
+    public String que_eu_estou_na_pagina_home(String email_login, String senha_login){
         loginPage.acessarAplicacao();
-        loginPage.inserirEmail();
-        loginPage.inserirSenha();
+        loginPage.inserirEmail(email_login);
+        loginPage.inserirSenha(senha_login);
         loginPage.clicarBotaoEntrar();
         homePage.acessarAplicacao();
         homePage.validarMensagemBemVindo();
+        return email_login;
     }
 
     @E("^clico no menu Contas$")

@@ -18,14 +18,16 @@ public class LoginStep extends RunCucumberTest {
         loginPage.acessarAplicacao();
     }
 
-    @Quando("^eu insiro email$")
-    public void eu_insiro_email(){
-        loginPage.inserirEmail();
+    @Quando("^eu insiro email '(.*)'$")
+    public String eu_insiro_email(String email_login){
+        loginPage.inserirEmail(email_login);
+        return email_login;
     }
 
-    @E("^insiro a senha$")
-    public void insiro_a_senha(){
-        loginPage.inserirSenha();
+    @E("^insiro a senha '(.*)'$")
+    public String insiro_a_senha(String senha_login){
+        loginPage.inserirSenha(senha_login);
+        return senha_login;
     }
 
     @E("^clico no botao Entrar$")

@@ -18,12 +18,13 @@ public class LoginPage extends Utils {
         Assert.assertEquals(true, driver.findElement(By.xpath("//*[@id=\"bs-example-navbar-collapse-1\"]/ul/li[1]/a")).isDisplayed());
     }
 
-    public void inserirEmail() {
-        driver.findElement(By.id("email")).sendKeys("gabriela@pires");
+    public String inserirEmail(String nome_email) {
+        driver.findElement(By.id("email")).sendKeys(nome_email);
+        return nome_email;
     }
 
-    public void inserirSenha(){
-        driver.findElement(By.id("senha")).sendKeys("123456");
+    public void inserirSenha(String senha_email){
+        driver.findElement(By.id("senha")).sendKeys(senha_email);
     }
 
     public void clicarBotaoEntrar(){
