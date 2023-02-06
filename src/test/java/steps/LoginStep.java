@@ -37,7 +37,7 @@ public class LoginStep extends RunCucumberTest {
 
     @Entao("^o sistema realiza o login com sucesso$")
     public void o_sistema_realiza_o_login_com_sucesso(){
-        homePage.acessarAplicacao();
+        homePage.acessarAplicacaoHome();
     }
 
     @E("^exibe mensagem de bem vindo$")

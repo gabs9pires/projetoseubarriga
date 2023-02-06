@@ -12,29 +12,6 @@ import runner.RunCucumberTest;
 public class ContasStep extends RunCucumberTest {
     Contas_adicionarPage contasAdicionarPage = new Contas_adicionarPage(driver);
     Contas_listaPage contasListaPage = new Contas_listaPage(driver);
-    LoginPage loginPage = new LoginPage(driver);
-
-    @Dado("^que eu estou na pagina do login$")
-    public void que_eu_estou_na_pagina_do_login(){
-        loginPage.acessarAplicacao();
-    }
-
-    @E("^insiro email '(.*)'$")
-    public String eu_insiro_email(String email_login){
-        loginPage.inserirEmail(email_login);
-        return email_login;
-    }
-
-    @E("^insiro senha '(.*)'$")
-    public String insiro_a_senha(String senha_login){
-        loginPage.inserirSenha(senha_login);
-        return senha_login;
-    }
-
-    @E("^clico no botao para Entrar$")
-    public void clico_no_botão_Entrar(){
-        loginPage.clicarBotaoEntrar();
-    }
 
     @Quando("^eu insiro o nome '(.*)' da conta$")
     public void eu_insiro_o_nome_da_conta(String nome_conta){

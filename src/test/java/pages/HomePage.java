@@ -11,8 +11,12 @@ public class HomePage extends Utils {
         this.driver = driver;
     }
 
-    public void acessarAplicacao (){
-        esperarElementoPresente(By.xpath("//*[@id=\"navbar\"]/ul/li[1]/a"), 50);
+    public void logarUserDefault(){
+        fazerLoginUserDefault();
+    }
+
+    public void acessarAplicacaoHome (){
+        esperarElementoPresente(By.xpath("//*[@id=\"navbar\"]/ul/li[1]/a"), 10);
     }
 
     public void validarMensagemBemVindo (){
