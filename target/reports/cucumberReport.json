@@ -9,7 +9,7 @@
     "line": 3,
     "elements": [
       {
-        "line": 24,
+        "line": 21,
         "name": "Adicionar conta",
         "description": "",
         "id": "login---contas---adicionar;adicionar-conta;;2",
@@ -18,76 +18,22 @@
         "steps": [
           {
             "result": {
-              "duration": 1059050100,
+              "duration": 1948843900,
               "status": "passed"
             },
             "line": 10,
-            "name": "que eu estou na pagina do login",
+            "name": "que eu estou na pagina home",
             "match": {
-              "location": "ContasStep.que_eu_estou_na_pagina_do_login()"
+              "location": "HomeStep.que_eu_estou_na_pagina_home()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 94595400,
+              "duration": 54671900,
               "status": "passed"
             },
             "line": 11,
-            "name": "insiro email \u0027gabriela@pires\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "gabriela@pires",
-                  "offset": 14
-                }
-              ],
-              "location": "ContasStep.eu_insiro_email(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 83052600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "insiro senha \u0027123456\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "123456",
-                  "offset": 14
-                }
-              ],
-              "location": "ContasStep.insiro_a_senha(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 953194200,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "clico no botao para Entrar",
-            "match": {
-              "location": "ContasStep.clico_no_botão_Entrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 68868800,
-              "status": "passed"
-            },
-            "line": 14,
             "name": "clico no menu Contas",
             "match": {
               "location": "HomeStep.clico_no_menu_Contas()"
@@ -96,10 +42,10 @@
           },
           {
             "result": {
-              "duration": 423898400,
+              "duration": 212614200,
               "status": "passed"
             },
-            "line": 15,
+            "line": 12,
             "name": "seleciono o submenu Adicionar",
             "match": {
               "location": "HomeStep.seleciono_o_submenu_Adicionar()"
@@ -108,10 +54,10 @@
           },
           {
             "result": {
-              "duration": 101056600,
+              "duration": 85337100,
               "status": "passed"
             },
-            "line": 16,
+            "line": 13,
             "name": "eu insiro o nome \u0027Conta Poupança\u0027 da conta",
             "match": {
               "arguments": [
@@ -123,16 +69,16 @@
               "location": "ContasStep.eu_insiro_o_nome_da_conta(String)"
             },
             "matchedColumns": [
-              2
+              0
             ],
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 538368300,
+              "duration": 267065400,
               "status": "passed"
             },
-            "line": 17,
+            "line": 14,
             "name": "clico no botao Salvar",
             "match": {
               "location": "ContasStep.clico_no_botão_Salvar()"
@@ -141,10 +87,10 @@
           },
           {
             "result": {
-              "duration": 80226900,
+              "duration": 38119500,
               "status": "passed"
             },
-            "line": 18,
+            "line": 15,
             "name": "o sistema abre a lista de contas",
             "match": {
               "location": "ContasStep.o_sistema_abre_a_lista_de_contas()"
@@ -153,10 +99,10 @@
           },
           {
             "result": {
-              "duration": 45704400,
+              "duration": 32990900,
               "status": "passed"
             },
-            "line": 19,
+            "line": 16,
             "name": "valido a mensagem de sucesso",
             "match": {
               "location": "ContasStep.valido_a_mensagem_de_sucesso()"
@@ -165,10 +111,10 @@
           },
           {
             "result": {
-              "duration": 412567800,
+              "duration": 298047500,
               "status": "passed"
             },
-            "line": 20,
+            "line": 17,
             "name": "eu encontro minha conta \u0027Conta Poupança\u0027",
             "match": {
               "arguments": [
@@ -180,7 +126,7 @@
               "location": "ContasStep.eu_encontro_minha_conta(String)"
             },
             "matchedColumns": [
-              2
+              0
             ],
             "keyword": "E "
           }
@@ -212,7 +158,7 @@
         "steps": [
           {
             "result": {
-              "duration": 369642800,
+              "duration": 277214100,
               "status": "passed"
             },
             "line": 10,
@@ -224,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 107558900,
+              "duration": 69699200,
               "status": "passed"
             },
             "line": 11,
@@ -245,7 +191,7 @@
           },
           {
             "result": {
-              "duration": 76048400,
+              "duration": 67782700,
               "status": "passed"
             },
             "line": 12,
@@ -266,7 +212,7 @@
           },
           {
             "result": {
-              "duration": 628203800,
+              "duration": 487215900,
               "status": "passed"
             },
             "line": 13,
@@ -278,7 +224,7 @@
           },
           {
             "result": {
-              "duration": 124294900,
+              "duration": 50673300,
               "status": "passed"
             },
             "line": 14,
@@ -290,7 +236,7 @@
           },
           {
             "result": {
-              "duration": 129447300,
+              "duration": 74628900,
               "status": "passed"
             },
             "line": 15,

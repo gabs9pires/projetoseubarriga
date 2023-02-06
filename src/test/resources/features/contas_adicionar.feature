@@ -7,10 +7,7 @@ Funcionalidade: Login - Contas - Adicionar
 
 
   Esquema do Cenário: Adicionar conta
-    Dado que eu estou na pagina do login
-      E insiro email '<email_conta>'
-      E insiro senha '<senha_conta>'
-      E clico no botao para Entrar
+    Dado que eu estou na pagina home
       E clico no menu Contas
       E seleciono o submenu Adicionar
     Quando eu insiro o nome '<conta_nome>' da conta
@@ -20,5 +17,5 @@ Funcionalidade: Login - Contas - Adicionar
       E eu encontro minha conta '<conta_nome>'
 
     Exemplos:
-    |  email_conta |senha_conta|  conta_nome  |
-    |gabriela@pires|   123456  |Conta Poupança|
+    |  conta_nome  |
+    |Conta Poupança|
